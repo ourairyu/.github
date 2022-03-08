@@ -1,0 +1,90 @@
+.Animations {
+  overflow: hidden;
+
+  $item-gap: 10px;
+
+  &-content {
+    list-style: none inside none;
+    margin: 0 ($item-gap * -1);
+    padding-left: 0;
+    @include clearfix;
+  }
+
+  &-item {
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: $item-gap / 2 $item-gap;
+
+    &,
+    > a {
+      border-radius: 6px;
+    }
+
+    > a {
+      display: block;
+      background: #eee none no-repeat 50% 50%;
+      background-size: cover;
+      @include aspect_ratio(3, 4, "> div");
+
+      > div {
+        top: auto;
+        color: #fff;
+
+        > span,
+        > div {
+          padding: 5px 8px;
+        }
+
+        > span {
+          display: block;
+          background-color: rgba(0, 0, 0, 0.3);
+          font: {
+            size: 14px;
+            weight: 400;
+          }
+        }
+
+        > div {
+          font-size: 12px;
+          background-color: rgba(0, 0, 0, 0.7);
+        }
+      }
+    }
+  }
+
+  &-showMore {
+    > a > div {
+      top: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      > span {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        margin-top: -15px;
+        padding: 0;
+        font: {
+          size: 30px;
+          weight: 500;
+        }
+        line-height: 1;
+        text-align: center;
+        background-color: transparent;
+      }
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &-item {
+      width: 25%;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    &-item {
+      width: 20%;
+    }
+  }
+}

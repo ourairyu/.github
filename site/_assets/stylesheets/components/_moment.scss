@@ -1,0 +1,261 @@
+.Moment {
+  padding-bottom: 16px;
+
+  &-header,
+  &-footer {
+    @include pie-clearfix;
+
+    a {
+      &,
+      &:hover,
+      &:focus {
+        color: inherit;
+      }
+    }
+  }
+
+  &-header {
+    position: relative;
+  }
+
+  &-avatar {
+    position: absolute;
+    @include circle(48px);
+  }
+
+  &-name {
+    font: {
+      size: 16px;
+      weight: 500;
+    }
+  }
+
+  &-did {
+    margin-left: 5px;
+  }
+
+  &-body {
+    margin: 8px 0 16px;
+  }
+
+  &-tag {
+    margin-left: 8px;
+
+    &:before {
+      content: "#";
+    }
+  }
+
+  &-cite {
+    position: relative;
+    padding: 16px;
+    background-color: #f5f5f5;
+    border: 1px solid #a6a6a6;
+    border-radius: 6px;
+
+    &:before,
+    &:after {
+      content: $UN-space;
+      position: absolute;
+      bottom: 100%;
+      @include square(0);
+    }
+
+    &:before {
+      left: 16px;
+      border: 10px solid transparent;
+      border-bottom-color: #a6a6a6;
+    }
+
+    &:after {
+      left: 17px;
+      border: 9px solid transparent;
+      border-bottom-color: #f5f5f5;
+    }
+  }
+
+  &-footer {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &-meta {
+    float: right;
+  }
+
+  &-actions {
+    @include pie-clearfix;
+
+    > a,
+    > span {
+      float: left;
+
+      + a,
+      + span {
+        margin-left: 2em;
+      }
+    }
+  }
+
+  &--loose {
+    padding-left: 60px;
+    font-size: 14px;
+  }
+
+  &--loose & {
+    &-time {
+      float: right;
+      margin-top: 1px;
+    }
+
+    &-avatar {
+      right: 100%;
+      margin-right: 12px;
+    }
+  }
+
+  &:not(&--loose) {
+    padding-top: 12px;
+  }
+
+  &:not(&--loose) & {
+    &-header,
+    &-footer {
+      font-size: 14px;
+    }
+
+    &-header {
+      padding: {
+        right: 15px;
+        left: 75px;
+      }
+    }
+
+    &-avatar {
+      left: 15px;
+    }
+
+    &-body,
+    &-footer {
+      padding: {
+        right: 15px;
+        left: 15px;
+      }
+    }
+  }
+
+  &.u-zoomFontSize & {
+    &-content {
+      font-size: 24px;
+    }
+  }
+}
+
+.MomentCite {
+  &-body {
+    @include pie-clearfix;
+  }
+
+  &-image {
+    float: right;
+    width: 120px;
+    margin: {
+      bottom: 8px;
+      left: 8px;
+    }
+  }
+
+  &-title + &-image {
+    margin-top: 8px;
+  }
+
+  &-title {
+    margin: 0;
+    font-size: 18px !important;
+    line-height: 1.4;
+  }
+
+  &-content {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  &--noArrow {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.MomentImages {
+  margin: {
+    right: -3px;
+    left: -3px;
+  }
+  overflow: hidden;
+  @include pie-clearfix;
+
+  &-item {
+    padding: 3px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-image {
+    background: transparent none 50% 50% no-repeat;
+    background-size: cover;
+    @include aspect_ratio(1, 1);
+  }
+
+  &-item img,
+  &-image {
+    border-radius: 6px;
+    background-color: #fff;
+  }
+}
+
+.Moment--talk .MomentCite {
+  &-image {
+    a,
+    img {
+      display: block;
+    }
+
+    a {
+      position: relative;
+
+      &:before,
+      &:after {
+        content: $UN-space;
+        position: absolute;
+      }
+
+      &:before {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .35);
+      }
+
+      &:after {
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin: {
+          top: -12px;
+          left: -8px;
+        }
+        border: {
+          width: 12px 16px;
+          style: solid;
+          color: transparent transparent transparent #fff;
+        }
+      }
+    }
+  }
+}

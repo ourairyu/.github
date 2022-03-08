@@ -1,0 +1,23 @@
+{
+  "name": "@ourairyu/meta",
+  "version": "0.0.0",
+  "description": "Meta-ourairyu",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf .asset-cache .cache src/*/.asset-cache src/*/.cache",
+    "start": "node build serve",
+    "predeploy": "npm run clean",
+    "deploy": "node build deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ourairyu/.github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ourairyu/.github/issues"
+  },
+  "homepage": "https://github.com/ourairyu/.github#readme"
+}

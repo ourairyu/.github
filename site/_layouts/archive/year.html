@@ -1,0 +1,6 @@
+---
+layout: page
+---
+{% contentfor post_title %}发表于 {{ page.date | date: "%Y" }} 年的文章{% endcontentfor %}
+
+{% include partials/articles.html posts=page.posts %}
