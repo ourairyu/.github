@@ -4,12 +4,7 @@
   "description": "Meta-ourairyu",
   "private": true,
   "main": "index.js",
-  "scripts": {
-    "clean": "rm -rf .asset-cache .cache src/*/.asset-cache src/*/.cache",
-    "start": "node build serve",
-    "predeploy": "npm run clean",
-    "deploy": "node build deploy"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ourairyu/.github.git"
@@ -19,5 +14,5 @@
   "bugs": {
     "url": "https://github.com/ourairyu/.github/issues"
   },
-  "homepage": "https://github.com/ourairyu/.github#readme"
+  "homepage": "https://meta.ourai.ws/"
 }
