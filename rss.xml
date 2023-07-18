@@ -6,10 +6,231 @@
     <description></description>
     <link>https://meta.ourai.ws/</link>
     <atom:link href="https://meta.ourai.ws/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 12 Mar 2023 10:55:21 +0800</pubDate>
-    <lastBuildDate>Sun, 12 Mar 2023 10:55:21 +0800</lastBuildDate>
+    <pubDate>Tue, 18 Jul 2023 16:27:59 +0800</pubDate>
+    <lastBuildDate>Tue, 18 Jul 2023 16:27:59 +0800</lastBuildDate>
     <language>zh-CN</language>
     <generator>Jekyll v3.0.3</generator>
+    
+      
+      <item>
+        <title>我为啥又重视起公共平台了？</title>
+        
+        <dc:creator>欧雷</dc:creator>
+        <author>欧雷</author>
+        <description>&lt;p&gt;微信朋友圈里发个信息，能看到的最多也就好友数那些人，会点赞评论进行互动的也固定在那寥寥无几的几个人中，并且每条消息的生命周期也就几小时，没劲！&lt;/p&gt;
+
+&lt;p&gt;前几天晚上要睡觉时忽然想到：「何不重新开始用新浪微博（&lt;a href=&quot;https://weibo.com/u/1818955207&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;@欧雷殿&lt;/a&gt;）呢？」&lt;/p&gt;
+
+&lt;p&gt;这个妙啊——在新浪微博上发信息，无论是曝光度还是生命周期，都会有大幅提升！那晚我激动到失眠……&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;态度转变&lt;/h2&gt;
+
+&lt;p&gt;自从 2012 年&lt;a href=&quot;/posts/brief-history-of-my-blog/#section-7&quot;&gt;逃离博客平台而「自立门户」成为独立博客&lt;/a&gt;时起，一直以来我都是以个人网站为中心进行内容生态建设——&lt;/p&gt;
+
+&lt;p&gt;内容首发于个人网站，再根据其形态和领域选择性地分发到适当的公共平台，以加大曝光度；个人网站作为自己所输出内容的最全索引与控制力最强、数据最有保障的托底而存在。&lt;/p&gt;
+
+&lt;p&gt;随着近几年自我意识的进一步觉醒与强化，我开始思考 to C 服务该有的样子，诞生了「&lt;a href=&quot;/series/talking-about-individual-centered-services/&quot;&gt;闲聊个人服务&lt;/a&gt;」系列文章。&lt;/p&gt;
+
+&lt;p&gt;尤其是在内容的生产与消费方面，我脑中有个乌托邦——&lt;a href=&quot;/posts/say-goodbye-to-blog/#section&quot;&gt;人人都有个人网站，将其作为在互联网上链接彼此的基石。&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;为距离这个乌托邦更近一些，于前年采取了较为激进的行动——把发表在 SegmentFault、掘金和公众号「Coding as Hobby」等上面的内容删除并注销账号，即便已积累了一些关注者。&lt;/p&gt;
+
+&lt;p&gt;虽在去年下半年又重新注册了部分账号，但之前的影响力已基本不复存在，现在看来当初的行为显得那么愚蠢且鲁莽。&lt;/p&gt;
+
+&lt;p&gt;至于我为啥逐渐重视起公共平台，是由于两个原因让我渴求庞大的流量——&lt;/p&gt;
+
+&lt;p&gt;作为表达者，想要自己的想法、观点被更多的人看到并进行讨论交流；作为创作者，想令自己的作品被更多的人认同，为他们提供价值。&lt;/p&gt;
+
+&lt;p&gt;我差不多明确了自己的赚钱方式，认同我本人及作品的人就是潜在客户，需要尽可能地扩大流量以提高转化率。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;媒体局限&lt;/h2&gt;
+
+&lt;p&gt;若把互联网看作是信息的汪洋大海，当前主流形式的个人网站与公共平台都是孤岛，在信息的互通有无上有着各自的局限。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;个人网站&lt;/h3&gt;
+
+&lt;p&gt;个人网站的开放性是最高的，几乎没什么内容访问的门槛，这意味着任何人都可匿名查看发布在网站上的信息。&lt;/p&gt;
+
+&lt;p&gt;这样一来，很难对具体的访客进行建模与追踪，连来者何人都不知道，更别提做什么精准营销、私域运营了！&lt;/p&gt;
+
+&lt;p&gt;给网站加个虚拟身份系统能够一定程度上解决这类问题，可他们去登录进这个系统的动力又是啥呢？&lt;/p&gt;
+
+&lt;p&gt;绝大部分访客是看完即走，只有极个别的会留言评论。而他们会特意留下踪迹的前提，很可能是网站已经比较有影响力或内容很有价值。&lt;/p&gt;
+
+&lt;p&gt;然而，恰恰在不借助任何公共平台和线下推广等带来的流量而仅靠搜索引擎时，很难让个人网站积聚影响力，除非网站的大部分内容是大众所需要且稀缺的——这可能吗？&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;公共平台&lt;/h3&gt;
+
+&lt;p&gt;公共平台上产生的内容得合法合规所带来的监管和审核问题，以及公共平台背后受资本主义支配的企业所拥有的数据霸权，都在降低信息的开放性并限制使用者的自由。&lt;/p&gt;
+
+&lt;p&gt;如果说个人网站是只有一个人居住的孤岛的话，那各个公共平台就是建立了「国家」的孤岛，平台背后的企业则是这「国家」的政权。&lt;/p&gt;
+
+&lt;p&gt;各「国家」为了自身利益，完善各类基础设施，从而它们之间高度同质化；再通过各种手段吸引人们注意力，影响他们心智，想要他们永久居住在自己那。&lt;/p&gt;
+
+&lt;p&gt;若要「全球化」的话，处在不同「国家」的人们就能方便地交流了，也用不着在不同「国家」制造分身；可那些「国家」却偏偏都选择「闭关锁国」，给人们制造麻烦。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-4&quot;&gt;传播体系&lt;/h2&gt;
+
+&lt;p&gt;一般来说，鉴于人区别于其他动物的特性，乌托邦是无法成为现实的，但这不代表就不需要为之努力了。&lt;/p&gt;
+
+&lt;p&gt;再者，就算仅仅基于我的个人网站定位，也会继续秉持以个人网站为中心进行内容生态建设的理念——&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;网站的新定位是「个人知识库」，或者说是「第二大脑」，更确切地说应该是「知识/内容输出的一种方式」。&lt;/p&gt;
+  &lt;footer&gt;欧雷《&lt;cite&gt;&lt;a href=&quot;/posts/say-goodbye-to-blog/&quot;&gt;再见，博客！&lt;/a&gt;&lt;/cite&gt;》&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;若只是这样，或像几天之前那样基本只较为重视微信生态这一个公共平台，那我的「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」就是一个不那么开放而相对封闭的系统。&lt;/p&gt;
+
+&lt;p&gt;这既不利于我要表达的想法、观点更广地传播，又无助于自我精神世界更快地迭代；因而，我得进一步整合其他公共平台以提高传播和迭代的效率。&lt;/p&gt;
+
+&lt;p&gt;经过升级，我的传播体系包含三个子体系：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;内容体系——个人网站作为本地个人知识库对外公开的那部分，是自己在互联网上输出内容的最全索引与控制力最强、数据最有保障的托底；&lt;/li&gt;
+  &lt;li&gt;流量体系——在主流以内容生产与消费为核心业务的公共平台上分发内容，增加曝光度，扩大影响力；&lt;/li&gt;
+  &lt;li&gt;私域体系——在主流以即时聊天为核心业务并提供内容生产与消费以及应用功能扩展能力的公共平台上，为从流量体系中筛选而来的粉丝提供更好的商品与服务以获得收入，形成良性循环。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;除了内容体系，流量体系与私域体系会针对中文圈与非中文圈搭建两套完全不同的矩阵——理论上，中文圈在国内平台用中文，非中文圈在国外平台用英文。&lt;/p&gt;
+
+&lt;p&gt;另外，由于公共平台在功能上的高度同质化，我会取各家之长，即只用它们起家时的功能，如：新浪微博与 Twitter 的微博客，知乎与 Quora 的问答。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Jul 2023 22:30:29 +0800</pubDate>
+        
+        <link>https://ourai.ws/posts/why-i-am-back-to-content-platforms/</link>
+        <guid isPermaLink="true">https://ourai.ws/posts/why-i-am-back-to-content-platforms/</guid>
+        
+        <category>thoughts</category>
+        
+        
+        <category>life-hacking</category>
+        
+        <category>self-media</category>
+        
+        <category>personal-branding</category>
+        
+      </item>
+    
+      
+      <item>
+        <title>自媒体人的自我修养</title>
+        
+        <dc:creator>欧雷</dc:creator>
+        <author>欧雷</author>
+        <description>&lt;p&gt;说实话，本文标题具有迷惑性，会让人误以为是要说「作为自媒体人该怎样」——我自认为暂时还没资格去写这方面的内容，故实际上是「我作为自媒体人的一些想法」。&lt;/p&gt;
+
+&lt;p&gt;也许有人会质疑我：「你这也算自媒体人？」&lt;/p&gt;
+
+&lt;p&gt;不管别人怎么看待以及如何评价，我觉得自己是自媒体人的话，那我就是，无需向任何人解释与证明。即便如此，我依然想要在这里说说为何认为自己是自媒体人，以及今后在自媒体方面的打算。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;我的理解&lt;/h2&gt;
+
+&lt;p&gt;要说「自媒体人」，就得阐明什么是「自媒体」；但要解释「自媒体」，就又得给「媒体」下个定义。&lt;/p&gt;
+
+&lt;p&gt;简单来说，「媒体」是信息从源头到接收者之间的中介，起到传递信息的作用——这是比较广义的说法，但普罗大众更习惯将这个词理解为某个组织、机构向人们发布信息的途径，接收者是潜在符合某些特征的不定数量的人。&lt;/p&gt;
+
+&lt;p&gt;「媒体」会伴随科技的发展而改进，信息发布与传播的门槛和成本也越来越低，因而现在每个人只要手里有个能连网的设备，就能向其他人发布并传播信息——这就是「自媒体」。&lt;/p&gt;
+
+&lt;p&gt;既然这样，那随便一个什么人在网上发布了有用没用的信息，他就算是「自媒体人」了吗？很显然，这种理解大众并不会买账，我也不认为「自媒体人」的门槛就这么低。&lt;/p&gt;
+
+&lt;p&gt;随着知乎、B 站等内容平台的出现与狂卷，各种博主、UP 主借势崛起并财富自由，导致一提起「自媒体」和「自媒体人」就会令人觉得做「自媒体」容易翻身或暴富，或者赚钱了才能叫「自媒体」和「自媒体人」——这是人们莫大的误解。&lt;/p&gt;
+
+&lt;p&gt;那么，到底怎样才算「自媒体人」呢？&lt;/p&gt;
+
+&lt;p&gt;根据上文中「媒体」的定义及大众的习惯理解，我认为「自媒体人」要至少满足以下几个条件：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;发布的信息具有较强的目的性，是经过自己筛选的，且能被多个陌生人接受，不是非常个人化的鸡零狗碎；&lt;/li&gt;
+  &lt;li&gt;聚焦于某（几）个领域，要让自己看上去有所沉淀，具备一定深度，而非东一榔头西一棒子的感觉。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;将这几点总结为更加直白的几个字就是——发布对他人有用的信息。也就是说，「自媒体」和「自媒体人」的关键点在于「传播」，而非「赚钱」。&lt;/p&gt;
+
+&lt;p&gt;说白了，「自媒体人」就是通过「自媒体」打造个人品牌的人。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;我的品牌&lt;/h2&gt;
+
+&lt;p&gt;我从还在校园里时就有在网上写文的习惯，那时用的是 QQ 空间、校内网、博客大巴等；几经辗转，在步入社会后稍微有了可自主支配的收入时，就开始使用虚拟主机/云主机与独立域名，至今已十多年。（详见《&lt;a href=&quot;/posts/brief-history-of-my-blog/&quot;&gt;我的博客简史&lt;/a&gt;》）&lt;/p&gt;
+
+&lt;p&gt;忘记自己是从几时开始具备塑造个人品牌的意识的，可能是在 2013 年将个人网站名称从「宅男的部屋」改为「欧雷流」时，也可能是在 2012 年注册 &lt;code&gt;ourai.ws&lt;/code&gt; 这个独立域名之前。&lt;/p&gt;
+
+&lt;p&gt;经过多年沉淀，发现自己产出的内容大致分布在生活体验、哲学思考、软件开发、动漫游戏等方面，说明这些是我比较感兴趣且擅长的；表现形式以&lt;a href=&quot;/posts/&quot;&gt;文字&lt;/a&gt;与&lt;a href=&quot;/open-source/&quot;&gt;代码&lt;/a&gt;为主，也会有照片和&lt;a href=&quot;/moments/video/&quot;&gt;视频&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;内容所处领域看起来较为分散，不利于扩散传播与品牌塑造，需要改进——&lt;/p&gt;
+
+&lt;p&gt;「欧雷」这个品牌，即我以往常说的「虚拟人格」，当前给它的定位是专注于生活方式领域的「反混沌工程师」——消除「人生」与「协同」中的「混沌」，探索「知识＋工作流」提效方向。&lt;/p&gt;
+
+&lt;p&gt;鉴于此，「欧雷」无法同时承载多个相对割裂的领域。&lt;/p&gt;
+
+&lt;p&gt;像动漫游戏与其他领域之间的关联就比较薄弱，因而从 2019 年起分离出了「&lt;a href=&quot;https://shuramaru.com/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;飛鳥修羅丸&lt;/a&gt;」这个代表我御宅族身份的品牌/虚拟人格，并陆续迁移了动漫游戏相关内容与资源。&lt;/p&gt;
+
+&lt;p&gt;在剩下的那几个中，软件开发似乎也与其他的格格不入。若内容偏硬核的话，确实是这样，得考虑找机会分离出去；否则也可看作是生活方式的一部分，是改造和维持生活方式的手段。&lt;/p&gt;
+
+&lt;p&gt;严格来说，真正符合「欧雷」定位的是与&lt;a href=&quot;/posts/life-engineering-and-ourairyu/&quot;&gt;「欧雷流」这个「人生工程学」分支&lt;/a&gt;强相关的内容，「反混沌工程师」中的「工程」更多的是指「人生工程」而非「软件工程」。&lt;/p&gt;
+
+&lt;p&gt;因此，偏纯生活体验记录性质的内容，尤其是与家庭生活贴近的，未来很可能会转移到与我们的小家一起诞生的品牌/虚拟人格「&lt;a href=&quot;https://oreilia.com/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;欧蕾莉&lt;/a&gt;」中去运营。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;日后打算&lt;/h2&gt;
+
+&lt;p&gt;上文中说了，「发布对他人有用的信息」是一个自媒体人的基本素养；而「有用」的判断标准多种多样，但至少每个内容都要有鲜明的主题，并用适合的方式尽量表达清楚。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;内容方面&lt;/h3&gt;
+
+&lt;p&gt;作为自媒体人，不仅要保证产出内容的质量，还要在数量上尽可能地多，并形成内容更新的节奏感——这都是塑造个人品牌的重要前提，什么影响力提升啊，商业化啊，都要以此为基础。&lt;/p&gt;
+
+&lt;p&gt;相较于前些年我写的文章，近几年写的都比较「硬核」，这样的内容需要在大量的经验、知识的积累之上进行深度思考才能写出来，这必然会导致产出频率较低。&lt;/p&gt;
+
+&lt;p&gt;为了提高更新频率，我打算继续去写像出行游记这种搁置已久的生活体验记录类的文章；但这不代表我用这类文章凑数量而忽视质量，依然会给他人提供价值！&lt;/p&gt;
+
+&lt;p&gt;之所以会有此打算，还因为最近在做「&lt;a href=&quot;https://space.bilibili.com/152919/channel/seriesdetail?sid=3103055&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;暴走杭州&lt;/a&gt;」系列 vlog 时察觉到单纯通过视频传达的局限性：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;为控制时长，视频成品中基本只包含了粗浅的攻略性解说、有特色的风景和符合当时情景的记录与表演，人文背景、心路历程、攻略的细致程度等明显不足；&lt;/li&gt;
+  &lt;li&gt;图文结合的文章比视频更适合承载那些缺失的信息，形成互补，也更有利于传播。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;运营方面&lt;/h3&gt;
+
+&lt;p&gt;一直以来，我都倾向于只靠个人网站去经营个人品牌，不去较强地依赖于任何内容平台，除非我的网站暂时不具备某方面的能力，如音视频的上传与播放。&lt;/p&gt;
+
+&lt;p&gt;然而，在移动端应用作为流量入口大行其道的当下，再加上我写的文章几乎不是笔记、教程类，来源于搜索引擎的流量少得可怜，他人手工汇总的资料及内容分发网站的爬虫占据访问量的大多数。&lt;/p&gt;
+
+&lt;p&gt;若是继续固执且理想化地坚持集中于个人网站，将会大大有碍于影响力的提升，更别谈什么进一步的商业化了！我应该改变心态，适当并积极地拥抱那些内容平台，借助于它们的优势为自己引流。&lt;/p&gt;
+
+&lt;p&gt;今后我会好好地运营下自己在&lt;a href=&quot;https://www.zhihu.com/people/ourai&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;知乎&lt;/a&gt;和 &lt;a href=&quot;https://space.bilibili.com/152919/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;B 站&lt;/a&gt;的账号，还可能让俺家&lt;a href=&quot;/people/julia/&quot;&gt;🐷&lt;/a&gt;帮忙运营小红书。至于选择知乎与 B 站的原因，是它们的氛围与我的气质相符，在它们的生态里我有可能生存下去，并且它们的能力可与我的网站互补。&lt;/p&gt;
+
+&lt;p&gt;另外，由于微信生态的特殊性，我不得不也对它&lt;a href=&quot;/projects/ouraiverse/#wechat&quot;&gt;给予足够的重视&lt;/a&gt;，纵使它有很多值得被吐槽的地方，但依然是个相对健全且可形成闭环的系统。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-5&quot;&gt;结语&lt;/h2&gt;
+
+&lt;p&gt;做自媒体不难，但做自媒体人还是挺难的——以原创或二次创作为前提的质量、数量、更新频率、收益等，每增加一个维度上的要求，难度就增长了好几倍！&lt;/p&gt;
+
+&lt;p&gt;既然这么难，我为何还要在没什么流量，更谈不上有收益的情况下一直坚持去做自媒体人？是因为下面这看似理想主义的「初心」吧——&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;自己表达欲旺盛，或喜欢总结并记录所思所想、所见所闻，发到网上之后，除了日后有个地方能回顾自己曾经都做了什么，当时感受是怎样的，如何去思考应对的之外，还很有可能帮助并启发了其他人。&lt;/p&gt;
+  &lt;p&gt;传递自己的知识、经历、经验等，让它们去经受更多时间与场景的检验——假的、受限的被淘汰，真的、普适的永流传。真正有用的，应当被更多人知道与利用并继续传承，少走重复的路，这样民族、国家甚至人类整体才能持续进步。&lt;/p&gt;
+  &lt;footer&gt;欧雷《&lt;cite&gt;&lt;a href=&quot;/posts/i-prefer-the-knowledge-driven-life/&quot;&gt;知识驱动：写在前面&lt;/a&gt;&lt;/cite&gt;》&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我希望自己的产出能被更多的人看到并认可！&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Apr 2023 16:11:16 +0800</pubDate>
+        
+        <link>https://ourai.ws/posts/i-want-more-people-to-see-my-work/</link>
+        <guid isPermaLink="true">https://ourai.ws/posts/i-want-more-people-to-see-my-work/</guid>
+        
+        <category>thoughts</category>
+        
+        
+        <category>life-hacking</category>
+        
+        <category>self-media</category>
+        
+        <category>personal-branding</category>
+        
+      </item>
     
       
       <item>
