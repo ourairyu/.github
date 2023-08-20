@@ -6,10 +6,40 @@
     <description></description>
     <link>https://meta.ourai.ws/</link>
     <atom:link href="https://meta.ourai.ws/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Jul 2023 15:34:43 +0800</pubDate>
-    <lastBuildDate>Mon, 24 Jul 2023 15:34:43 +0800</lastBuildDate>
+    <pubDate>Mon, 21 Aug 2023 00:55:20 +0800</pubDate>
+    <lastBuildDate>Mon, 21 Aug 2023 00:55:20 +0800</lastBuildDate>
     <language>zh-CN</language>
     <generator>Jekyll v3.0.3</generator>
+    
+      
+      <item>
+        <title>在人物页中显示贡献</title>
+        
+        <dc:creator>欧雷</dc:creator>
+        <author>欧雷</author>
+        <description>&lt;p&gt;在人物页中根据相应人员为本站的可持续发展所做出的贡献进行相关记录展示：&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;{{ &#39;changes/20230820/contribution&#39; | asset_path }}&quot; alt=&quot;贡献记录&quot; /&gt;
+  &lt;figcaption&gt;贡献记录&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;并在&lt;a href=&quot;https://ourai.ws/people/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;人物列表页&lt;/a&gt;中新增一栏显示已&lt;a href=&quot;https://ourai.ws/sponsor/#donation&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;资助&lt;/a&gt;到一定额度或购买付费内容的「股东」们：&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;{{ &#39;changes/20230820/card-list&#39; | asset_path }}&quot; alt=&quot;「股东」们&quot; /&gt;
+  &lt;figcaption&gt;「股东」们&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;若有遗漏的已满足条件但还没有单独人物页的「股东」，可到 &lt;a href=&quot;https://github.com/ourairyu/persona&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;GitHub&lt;/a&gt; 上发起 PR，或将&lt;a href=&quot;https://github.com/ourairyu/persona/tree/master/guide&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;使用指南&lt;/a&gt;中所需信息&lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#111;&amp;#117;&amp;#114;&amp;#097;&amp;#105;&amp;#114;&amp;#121;&amp;#117;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;发邮件给我&lt;/a&gt;。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Aug 2023 23:44:12 +0800</pubDate>
+        
+        <link>https://meta.ourai.ws/posts/show-contribution-in-person-page/</link>
+        <guid isPermaLink="true">https://meta.ourai.ws/posts/show-contribution-in-person-page/</guid>
+        
+        
+      </item>
     
       
       <item>
