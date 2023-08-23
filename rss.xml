@@ -6,8 +6,8 @@
     <description></description>
     <link>https://meta.ourai.ws/</link>
     <atom:link href="https://meta.ourai.ws/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 21 Aug 2023 11:10:09 +0800</pubDate>
-    <lastBuildDate>Mon, 21 Aug 2023 11:10:09 +0800</lastBuildDate>
+    <pubDate>Wed, 23 Aug 2023 12:32:07 +0800</pubDate>
+    <lastBuildDate>Wed, 23 Aug 2023 12:32:07 +0800</lastBuildDate>
     <language>zh-CN</language>
     <generator>Jekyll v3.0.3</generator>
     
@@ -22,6 +22,13 @@
 &lt;figure&gt;
   &lt;img src=&quot;{{ &#39;changes/20230820/contribution&#39; | asset_path }}&quot; alt=&quot;贡献记录&quot; /&gt;
   &lt;figcaption&gt;贡献记录&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;付费的文章系列中也会显示已购买的支持者们：&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;{{ &#39;changes/20230820/buyers&#39; | asset_path }}&quot; alt=&quot;支持者们&quot; /&gt;
+  &lt;figcaption&gt;支持者们&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;并在&lt;a href=&quot;https://ourai.ws/people/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;人物列表页&lt;/a&gt;中新增一栏显示已&lt;a href=&quot;https://ourai.ws/sponsor/#donation&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;资助&lt;/a&gt;到一定额度或购买付费内容的「股东」们：&lt;/p&gt;
