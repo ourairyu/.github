@@ -6,10 +6,209 @@
     <description></description>
     <link>https://meta.ourai.ws/</link>
     <atom:link href="https://meta.ourai.ws/rss.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 28 Sep 2023 08:50:42 +0800</pubDate>
-    <lastBuildDate>Thu, 28 Sep 2023 08:50:42 +0800</lastBuildDate>
+    <pubDate>Mon, 02 Oct 2023 23:18:48 +0800</pubDate>
+    <lastBuildDate>Mon, 02 Oct 2023 23:18:48 +0800</lastBuildDate>
     <language>zh-CN</language>
     <generator>Jekyll v3.0.3</generator>
+    
+      
+      <item>
+        <title>聊下我这豆瓣化改造后的网站</title>
+        
+        <dc:creator>欧雷</dc:creator>
+        <author>欧雷</author>
+        <description>&lt;p&gt;从冒出想法到现在快三年了，这期间断断续续地弄，个人网站的豆瓣化改造差不多结束了；改造过程中又孵化出几个项目，且发现了个别突出问题，接下来会有一波较大重构。&lt;/p&gt;
+
+&lt;p&gt;想趁现在这个空隙写篇文章记录并介绍下改造后所形成的一整套体系，也许有人会感兴趣——毕竟我的个人网站是纯静态的，且比常规博客复杂。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;豆瓣化改造&lt;/h2&gt;
+
+&lt;p&gt;要把原本是常规博客的个人网站改造成个人版豆瓣的根源是对公共平台的厌恶。（详见《&lt;a href=&quot;/posts/brief-introduction-to-individual-centered-services/&quot;&gt;闲聊个人服务：革「to C」的命&lt;/a&gt;》）&lt;/p&gt;
+
+&lt;p&gt;在 2020 年 11 月的一天，晚上睡不着，脑子就活跃起来了——&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;失眠，躺尸七个小时，想了一些事情，其中包括跟自己个人网站相关的——&lt;/p&gt;
+  &lt;p&gt;要加几个功能：「想法」或者说「自言自语」，也是现在很常见的功能了，就是像推特、饭否、微博这种，有了什么想法就立即写出来，不用像写文章似的长篇大论，也不用太考虑措辞等；多语言支持，先（也基本只能）搞英语和日语版，将我现有文章翻译成对应语言，英语要我老婆帮忙，日语我自己来；网友身份识别系统，可以认为是一种账号系统，但是只用于我的个人网站相关服务的网友身份识别，利用（多种）第三方的登录服务，没有密码；评论系统，最主要的原因是现在用的 Disqus 被墙了，对和网友的交流产生很大影响，我要基于上面说的网友身份识别系统和 Git 做一个评论系统。还有其他的畅想，但先弄这几个。&lt;/p&gt;
+  &lt;p&gt;这几个东西的共同点是：基于 Git 的文件存储，而不是 SQL 这种数据库；基于去中心化的 open web 思想，是以个人为中心的，提供免费的工具，可以部署到自己的服务器。&lt;/p&gt;
+  &lt;footer&gt;欧雷的&lt;cite&gt;&lt;a href=&quot;/murmurs/1enp1f34o/&quot;&gt;想法&lt;/a&gt;&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;所谓「豆瓣化」并非是外观上弄成豆瓣的样子，而是具备它的一些功能——&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;加入微博和推特那种的「想法」、展示自己看的书影音等的「我的」、动态时间线的「时刻」及让与我有所关联的人有独立资料页的「人物」等模块。&lt;/p&gt;
+  &lt;footer&gt;欧雷《&lt;cite&gt;&lt;a href=&quot;/posts/say-goodbye-to-blog/&quot;&gt;再见，博客！&lt;/a&gt;&lt;/cite&gt;》&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我的网站是用 Jekyll 生成的，完全依赖它的话很难做数据管理并生成动态时间线，因而要进行翻天覆地的改变才行。&lt;/p&gt;
+
+&lt;p&gt;说干就干，第二天就找空开始了！&lt;/p&gt;
+
+&lt;h2 id=&quot;rubyrbrbrprprtouraiversertrprpruby&quot;&gt;数字「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」&lt;/h2&gt;
+
+&lt;p&gt;随着改造工作的推进，这个项目变得愈发复杂，并呈现出体系化的雏形，我将之命名为「&lt;a href=&quot;/projects/ouraiverse/&quot;&gt;&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;&lt;/a&gt;」：&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;{{ &#39;posts/20231002/overview&#39; | asset_path }}&quot; alt=&quot;「欧雷宇宙（Ouraiverse）」全景图&quot; /&gt;
+  &lt;figcaption&gt;「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」全景图&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;上图基本涵盖了当前体系的方方面面，并简单标明了它们之间的关系——&lt;/p&gt;
+
+&lt;p&gt;直角方块是独立网站或服务，圆角方块是「欧雷流」的一级模块，圆形则是二级模块。&lt;/p&gt;
+
+&lt;p&gt;那些直角方块的颜色分别代表：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;青玉色——从属于「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」的各个独立网站；&lt;/li&gt;
+  &lt;li&gt;深蓝色——不属于「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」的自己的孵化项目；&lt;/li&gt;
+  &lt;li&gt;粉红色——为「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」提供关键功能的第三方服务；&lt;/li&gt;
+  &lt;li&gt;深橙色——为「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」增加并扩大影响力的公共平台。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;其中，「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」的几个网站为：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;/&quot;&gt;欧雷流&lt;/a&gt;——展示以图文、音频、视频等方式创作的作品及个人动态之类的主站；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://oss.ourai.ws/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;欧雷的开源软件&lt;/a&gt;——专门展示开源软件及其官网、文档等；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://o.ourai.ws/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;欧雷的开放生活&lt;/a&gt;——公开在做的事情及进展、户外活动数据与足迹、赞赏记录等；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://s.ourai.ws/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;欧雷共享的内容&lt;/a&gt;——即「共享中心」，通过公开或受限方式共享的本地个人知识库内容；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://meta.ourai.ws/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;欧雷宇宙&lt;/a&gt;——记录「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」的构成与发展变化等。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;而孵化项目皆归属于「&lt;a href=&quot;https://world.ourai.ws/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;欧雷的数字世界&lt;/a&gt;」：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://qiidb.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;QiiDB&lt;/a&gt;——基于文件存储的开放数据集合及任何人都可用的在线资料库；&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://linxoid.com/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;LinXoid&lt;/a&gt;——个人互联网名片和与他人进行连接的平台。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;作为「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」核心的主站「欧雷流」主要由 6 大模块组成：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;创作（浅绿色）——汇总我的作品和碎片化信息，如&lt;a href=&quot;/posts/&quot;&gt;文章&lt;/a&gt;、&lt;a href=&quot;/videos/&quot;&gt;视频&lt;/a&gt;、&lt;a href=&quot;/moments/murmur/&quot;&gt;想法&lt;/a&gt;、&lt;a href=&quot;/notes/&quot;&gt;笔记&lt;/a&gt;、&lt;a href=&quot;https://s.ourai.ws/topics/weekly/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;周报&lt;/a&gt;、&lt;a href=&quot;/answers/&quot;&gt;问答&lt;/a&gt;、&lt;a href=&quot;/open-source/&quot;&gt;开源软件&lt;/a&gt;等，根据内容的特征而选择适合的公共平台分发以积累影响力；&lt;/li&gt;
+  &lt;li&gt;社交（紫色）——集成 Disqus 支撑访客评论，用独有的「人物」系统展现我与他人之间的关系；&lt;/li&gt;
+  &lt;li&gt;激励反馈（黄色）——通过定期付费的「&lt;a href=&quot;/sponsor/#sponsor&quot;&gt;赞助&lt;/a&gt;」或一次性付费的「&lt;a href=&quot;/sponsor/#donation&quot;&gt;资助&lt;/a&gt;」为我及「&lt;ruby&gt;&lt;rb&gt;欧雷宇宙&lt;/rb&gt;&lt;rp&gt;（&lt;/rp&gt;&lt;rt&gt;Ouraiverse&lt;/rt&gt;&lt;rp&gt;）&lt;/rp&gt;&lt;/ruby&gt;」的可持续发展「充电」，我会在「&lt;a href=&quot;/thanks/&quot;&gt;致谢&lt;/a&gt;」页、「&lt;a href=&quot;/people/&quot;&gt;人物&lt;/a&gt;」页和广告位等增加曝光予以回馈；&lt;/li&gt;
+  &lt;li&gt;介绍（橙红色）——让访客在 &lt;a href=&quot;https://linxoid.com/ourai/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;LinXoid 个人页&lt;/a&gt;了解我，在「&lt;a href=&quot;/about/&quot;&gt;关于&lt;/a&gt;」页和「&lt;a href=&quot;https://meta.ourai.ws/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;欧雷宇宙&lt;/a&gt;」了解网站本身；&lt;/li&gt;
+  &lt;li&gt;记录（深绿色）——在「&lt;a href=&quot;/publications/&quot;&gt;读物&lt;/a&gt;」页查看我在读、读过和想读的书籍，在「&lt;a href=&quot;/dramas/&quot;&gt;戏剧&lt;/a&gt;」页查看我在看、看过和想看的影视剧，在「&lt;a href=&quot;/devices/&quot;&gt;设备&lt;/a&gt;」页查看我拥有的各类设备，它们的数据来源于 &lt;a href=&quot;https://qiidb.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;QiiDB&lt;/a&gt;；&lt;/li&gt;
+  &lt;li&gt;时刻（浅蓝色）——汇聚了我创作与共享等的动态，形成时间线。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;体系架构&lt;/h2&gt;
+
+&lt;p&gt;经过一番伤筋动骨的改造，整体架构大致如下图所示：&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&quot;{{ &#39;posts/20231002/architecture&#39; | asset_path }}&quot; alt=&quot;整体架构&quot; /&gt;
+  &lt;figcaption&gt;整体架构&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;简单来说，就是将原本用 Jekyll 生成静态网站的数据从网站源码中剥离出去，并&lt;a href=&quot;https://qiidb.github.io/meta/zh/guides/spec/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;按照一致的结构存储&lt;/a&gt;，使其如数据库般与具体应用场景无关，作为数据源集中管理。&lt;/p&gt;
+
+&lt;p&gt;数据源中最重要的是被视为通用知识库的 &lt;a href=&quot;https://github.com/qiidb&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;QiiDB&lt;/a&gt; 和个人知识库「外脑」：&lt;/p&gt;
+
+&lt;p&gt;{% highlight text %}
+brain
+   ├── build                  # 数据处理脚本
+   │   └── …
+   ├── data                   # 数据源
+   │   ├── blog
+   │   │   ├── answers        # 问题的回答
+   │   │   ├── changes        # 「欧雷宇宙」的变更记录
+   │   │   ├── drafts         # 草稿
+   │   │   ├── media          # 转载我文章的媒体
+   │   │   ├── murmurs        # 想法
+   │   │   ├── notes          # 小红书笔记
+   │   │   ├── posts          # 文章
+   │   │   ├── series         # 文章系列
+   │   │   └── videos         # 创作的视频
+   │   ├── collection
+   │   │   ├── lists          # 列表
+   │   │   ├── projects       # 项目
+   │   │   └── repos          # 知识库
+   │   ├── mine
+   │   │   ├── animations     # 动画记录
+   │   │   ├── categories     # 设备类别
+   │   │   ├── devices        # 拥有的设备
+   │   │   ├── dramas         # 影视剧记录
+   │   │   ├── games          # 游戏记录
+   │   │   └── publications   # 书籍记录
+   │   ├── observation
+   │   │   ├── facts
+   │   │   ├── logs           # 每日做事日志
+   │   │   ├── memos          # 备忘
+   │   │   ├── people         # 人物信息
+   │   │   └── requirements   # 工作需求
+   │   └── summarization
+   │       ├── dailies        # 日报
+   │       ├── notes          # 笔记
+   │       └── weeklies       # 周报
+   ├── shared                 # 已共享文档
+   │   └── …
+   └── readme.md
+{% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;各个独立网站的源码从多个单独的 Git 仓库合并进一个 Git 仓库进行管理，统一调度：&lt;/p&gt;
+
+&lt;p&gt;{% highlight text %}
+homepage
+   ├── build            # 数据及网站处理脚本
+   │   └── …
+   ├── src              # 网站源码
+   │   ├── life         # 欧雷的开放生活
+   │   │   └── …
+   │   ├── meta         # 欧雷宇宙
+   │   │   └── …
+   │   ├── oss          # 欧雷的开源软件
+   │   │   └── …
+   │   ├── ourairyu     # 欧雷流
+   │   │   └── …
+   │   └── share        # 欧雷共享的内容
+   │       └── …
+   └── readme.md
+{% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;网站源码仓库中的脚本用来：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;把数据源转换为网站构建所需的数据，尤其是用于「&lt;a href=&quot;/moments/all/pages/2/&quot;&gt;时刻&lt;/a&gt;」的；&lt;/li&gt;
+  &lt;li&gt;启动本地服务器调试网站功能与样式，以及部署到云服务器或 GitHub Pages。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;个人知识库与网站源码仓库中的脚本在执行时都是用简化并统一后的 npm scripts：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;转换数据——&lt;code&gt;npm run build [module]&lt;/code&gt;；&lt;/li&gt;
+  &lt;li&gt;启动调试——&lt;code&gt;npm start&lt;/code&gt;；&lt;/li&gt;
+  &lt;li&gt;部署网站——&lt;code&gt;npm run deploy&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;具体逻辑写在 &lt;code&gt;build&lt;/code&gt; 文件夹下的 JS 文件中，基于 &lt;a href=&quot;https://knosysio.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external nofollow&quot;&gt;KnoSys&lt;/a&gt; 处理符合 QiiDB 数据规范的数据源及部分静态网站生成器的网站源码。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;结语&lt;/h2&gt;
+
+&lt;p&gt;这顿改造所引起的主要问题有——&lt;/p&gt;
+
+&lt;p&gt;构建网站需要从数据源转换而来的数据，这些「中间文件」占用了很多磁盘空间，数据和网站越多占用得就越多，磁盘剩余空间肉眼可见地变少。&lt;/p&gt;
+
+&lt;p&gt;网站源码文件多了，编译时间也变得很长，主站「欧雷流」每次部署都要半个小时左右……&lt;/p&gt;
+
+&lt;p&gt;要解决这俩问题的基本思路就是将网站的构建流程管道化，即从数据源经过流式转换直接生成最终的网页及相关文件。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 Oct 2023 21:47:08 +0800</pubDate>
+        
+        <link>https://ourai.ws/posts/doubanized-static-website/</link>
+        <guid isPermaLink="true">https://ourai.ws/posts/doubanized-static-website/</guid>
+        
+        <category>life</category>
+        
+        
+        <category>blog</category>
+        
+        <category>doubanization</category>
+        
+      </item>
     
       
       <item>
@@ -219,7 +418,7 @@
 
 &lt;p&gt;忘记自己是从几时开始具备塑造个人品牌的意识的，可能是在 2013 年将个人网站名称从「宅男的部屋」改为「欧雷流」时，也可能是在 2012 年注册 &lt;code&gt;ourai.ws&lt;/code&gt; 这个独立域名之前。&lt;/p&gt;
 
-&lt;p&gt;经过多年沉淀，发现自己产出的内容大致分布在生活体验、哲学思考、软件开发、动漫游戏等方面，说明这些是我比较感兴趣且擅长的；表现形式以&lt;a href=&quot;/posts/&quot;&gt;文字&lt;/a&gt;与&lt;a href=&quot;/open-source/&quot;&gt;代码&lt;/a&gt;为主，也会有照片和&lt;a href=&quot;/moments/video/&quot;&gt;视频&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;经过多年沉淀，发现自己产出的内容大致分布在生活体验、哲学思考、软件开发、动漫游戏等方面，说明这些是我比较感兴趣且擅长的；表现形式以&lt;a href=&quot;/posts/&quot;&gt;文字&lt;/a&gt;与&lt;a href=&quot;/open-source/&quot;&gt;代码&lt;/a&gt;为主，也会有照片和&lt;a href=&quot;/videos/&quot;&gt;视频&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;内容所处领域看起来较为分散，不利于扩散传播与品牌塑造，需要改进——&lt;/p&gt;
 
