@@ -13,7 +13,6 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     env:
-      SITE_REPO: ourairyu/.github.git
       SITE_BRANCH: site
     steps:
       - name: Create temp dirs
@@ -41,6 +40,5 @@ jobs:
       - uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GH_TOKEN }}
-          repository: ${{ env.SITE_REPO }}
           branch: ${{ env.SITE_BRANCH }}
           directory: site-dist
