@@ -58,6 +58,22 @@
           </div>
         <% }) %>
         </div>
+        <h2 id="changes">更新</h2>
+        <p>「<ruby>欧雷宇宙<rp>（</rp><rt>Ouraiverse</rt><rp>）</rp></ruby>」的建造动态：</p>
+        <div class="PostList">
+          <% site.data['knosys/changes'].sequence.slice().reverse().forEach((post_id, idx) => { %>
+          <% const post = site.data['knosys/changes'].items[post_id] %>
+          <div class="PostList-item">
+            <div class="Card Post<% if (idx === 0) { %> Post--latest<% } %>"<% if (post.banner) { %> style="background-image: url('<%= url_for(`knosys/${post.banner.url}`) %>');"<% } %>>
+              <a class="Card-link" <% if (post.external) { %>href="https://ourai.ws/posts/<%= post_id %>/<%= utm_fields %>" target="_blank" rel="nofollow"<% } else { %>href="/posts/<%= post_id %>/"<% } %>>
+                <h3 class="Post-title"><%= post.title %></h3>
+                <p class="Post-brief"><%= post.description %></p>
+                <p class="Post-meta"><time datetime="<%= date_xml(post.date) %>"><%= full_date(post.date, 'YYYY-MM-DD HH:mm:ss') %></time></p>
+              </a>
+            </div>
+          </div>
+          <% }) %>
+        </div>
       </div>
     </article>
   </div>

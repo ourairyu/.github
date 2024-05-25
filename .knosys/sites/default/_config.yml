@@ -148,7 +148,7 @@ ksio:
           type: posts
         values:
           ksio_asset_css:
-            - stylesheets/pages/post
+            - local/pages/post
           ksio_asset_js:
             - javascripts/ksio/vendors/jquery.timeago
             - javascripts/ksio/vendors/jquery.timeago.zh-CN
