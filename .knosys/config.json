@@ -1,0 +1,14 @@
+{
+  "command": "./.knosys/scripts/command",
+  "site": {
+    "default": {
+      "alias": "ourairyu-meta",
+      "cname": "meta.ourai.ws",
+      "generator": "hexo",
+      "git": {
+        "url": "https://github.com/ourairyu/.github.git",
+        "branch": "site"
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+@import "../../stylesheets/helper";
+
+body {
+  background-color: #fff;
+}
+
+.Homepage {
+  &-header {
+    margin-bottom: 30px;
+  }
+
+  &-body {
+    h2 {
+      margin-bottom: .67em;
+      font-size: 2.6em;
+      font-weight: 700;
+    }
+
+    p {
+      max-width: 26em;
+      font-size: 1.5em;
+      line-height: 1.4;
+    }
+  }
+}
+
+.Profile {
+  position: relative;
+  color: #fff;
+  text-shadow: 3px 3px 8px #000;
+  background: #333 none no-repeat 50% 50%;
+  background-size: cover;
+
+  &:before {
+    content: $UN-space;
+    @include stretch;
+    background-color: #000;
+    opacity: .25;
+  }
+
+  &-name,
+  &-description {
+    position: relative;
+  }
+
+  &-name {
+    &:before,
+    &:after {
+      font-weight: 300;
+    }
+  }
+
+  &-description {
+    margin-bottom: 0;
+    clear: none;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    height: 200px;
+
+    &-content {
+      padding-top: 46px;
+      text-align: right;
+    }
+
+    &-name {
+      font-size: 36px;
+
+      // &:before {
+      //   content: "我叫";
+      // }
+    }
+
+    &-description {
+      font-size: 14px;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    height: 600px;
+    padding-top: 200px;
+
+    &-content {
+      padding-left: 400px;
+    }
+
+    &-name {
+      &:before {
+        content: "Hi, I'm ";
+      }
+
+      &:after {
+        content: ".";
+      }
+    }
+
+    &-description {
+      margin-top: 30px;
+
+      span {
+        font-size: 24px;
+      }
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    &-content {
+      padding-left: 600px;
+    }
+  }
+
+  @media (min-width: $screen-lg-min) {
+    &-content {
+      padding-left: 700px;
+    }
+  }
+}
