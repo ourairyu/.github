@@ -20,7 +20,7 @@ jobs:
         run: mkdir data-src site-src site-dist
       - uses: actions/checkout@v3
         with:
-          repository: ourai/brain
+          repository: ourai/brain.git
           ref: master
           path: data-src
       - uses: actions/checkout@v3
