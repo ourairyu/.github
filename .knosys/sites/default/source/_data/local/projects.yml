@@ -1,0 +1,12 @@
+- name: 雷叔的生活研究
+  description: 思考并探索提升生活体验的思维方式与实操方法。
+  url: https://oreilia.com/projects/ourais-life-research/
+  banner: ourai-is-nomad.jpg
+- name: 欧雷的数字世界
+  description: 去中心化的、知识驱动的，与「现实世界」生活相连接相融合的赛博空间。
+  url: https://world.ourai.ws/
+  banner: cyberspace.png
+- name: 反混沌前端工程
+  description: 致力于前端标准化、工业化，让前端开发更加有序且可快速装配，为新型开发方式及协作模式做支撑。
+  url: https://ntks.ourai.ws/
+  banner: anti-chaos.jpg

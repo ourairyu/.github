@@ -1,3 +1,66 @@
 <%- partial(theme.header && theme.header.partial || '_ksio/partials/header') %>
+<main class="Page-content">
+  <% const banner_url = url_for(`images/local/banners/1988.jpg`) %>
+  <% const utm_fields = '?utm_source=meta.ourai.ws&utm_medium=homepage' %>
+  <div class="Page-banner hidden-xs" style="background-image: url('<%= banner_url %>');">
+    <figure class="sr-only">
+      <img src="<%= banner_url %>" alt="反混沌">
+      <figcaption>反混沌</figcaption>
+    </figure>
+  </div>
+  <div class="container">
+    <article class="Page-main Article">
+      <header class="Article-header HomeHeader">
+        <div>
+          <h1 class="Article-title HomeHeader-title"><ruby>欧雷宇宙<rp>（</rp><rt>Ouraiverse</rt><rp>）</rp></ruby></h1>
+          <p class="HomeHeader-slogan"><%= config.subtitle %></p>
+        </div>
+      </header>
+      <div class="Article-content">
+        <p>严格来讲，「<ruby>欧雷宇宙<rp>（</rp><rt>Ouraiverse</rt><rp>）</rp></ruby>」是<a href="https://linxoid.com/ourai/<%= utm_fields %>" title="到 LinXoid 查看「欧雷」的介绍" target="_blank" rel="nofollow">欧雷</a>本人的精神世界，而这里是其在互联网上的具现化产物——</p>
+        <h2>构成</h2>
+        <p>「<ruby>欧雷宇宙<rp>（</rp><rt>Ouraiverse</rt><rp>）</rp></ruby>」的组成部分：</p>
+        <div class="Grid is-active">
+        <% site.data['local/sites'].forEach(s => { %>
+          <div class="Grid-item">
+            <div class="Card Person">
+              <a class="Card-link Person-link" href="<%= s.url %><%= utm_fields %>" title="访问「<%= s.name %>」" target="_blank" rel="nofollow">
+                <div class="Person-header" style="background-image: url('<%= url_for(`images/local/banners/${s.banner}`) %>');">
+                  <div class="Person-brief">
+                    <h3 class="Person-name" data-toc-skip="true"><%= s.name %></h3>
+                  </div>
+                </div>
+                <div class="Person-body">
+                  <div class="Person-description"><%= s.description %></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        <% }) %>
+        </div>
+        <h2>孵化</h2>
+        <p>「<ruby>欧雷宇宙<rp>（</rp><rt>Ouraiverse</rt><rp>）</rp></ruby>」的孵化项目：</p>
+        <div class="Grid Grid--threeCols is-active">
+        <% site.data['local/projects'].forEach(p => { %>
+          <div class="Grid-item">
+            <div class="Card Person">
+              <a class="Card-link Person-link" href="<%= p.url %><%= utm_fields %>" title="访问「<%= p.name %>」" target="_blank" rel="nofollow">
+                <div class="Person-header" style="background-image: url('<%= url_for(`images/local/banners/${p.banner}`) %>');">
+                  <div class="Person-brief">
+                    <h3 class="Person-name" data-toc-skip="true"><%= p.name %></h3>
+                  </div>
+                </div>
+                <div class="Person-body">
+                  <div class="Person-description"><%= p.description %></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        <% }) %>
+        </div>
+      </div>
+    </article>
+  </div>
+</main>
 <%- partial('_ksio/slots/content') %>
 <%- partial(theme.footer && theme.footer.partial || '_ksio/partials/footer') %>

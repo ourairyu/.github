@@ -1,121 +1,210 @@
 @import "../../stylesheets/helper";
+@import "../../stylesheets/ksio/components/card";
 
-body {
-  background-color: #fff;
+.HomeHeader {
+  text-align: center;
+
+  &-title {
+    margin-bottom: 25px !important;
+    font-size: 70px !important;
+    font-weight: 700;
+  }
+
+  &-slogan {
+    margin-bottom: 10px !important;
+    font-size: 25px;
+    font-weight: normal;
+  }
 }
 
-.Homepage {
+.Grid {
+  $gap: 7.5px;
+
+  margin: 0 -$gap;
+
+  &,
+  * {
+    @include box-sizing(border-box);
+  }
+
+  @include clearfix;
+
+  &-item {
+    width: 100%;
+    float: left;
+    padding: $gap;
+
+    @media (min-width: $screen-sm-min) {
+      width: 50%;
+    }
+
+    @media (min-width: $screen-md-min) {
+      width: percentage(1 / 4);
+    }
+  }
+
+  &--twoCols &-item {
+    @media (min-width: $screen-md-min) {
+      width: 50%;
+    }
+  }
+
+  &--threeCols &-item {
+    @media (min-width: $screen-md-min) {
+      width: percentage(1 / 3);
+    }
+  }
+
+  & &-item:first-child {
+    margin-top: 0;
+  }
+}
+
+.Person {
+  height: 240px;
+  font-size: 14px;
+
+  &-link {
+    padding: 0;
+    font-size: inherit;
+  }
+
   &-header {
-    margin-bottom: 30px;
-  }
-
-  &-body {
-    h2 {
-      margin-bottom: .67em;
-      font-size: 2.6em;
-      font-weight: 700;
-    }
-
-    p {
-      max-width: 26em;
-      font-size: 1.5em;
-      line-height: 1.4;
-    }
-  }
-}
-
-.Profile {
-  position: relative;
-  color: #fff;
-  text-shadow: 3px 3px 8px #000;
-  background: #333 none no-repeat 50% 50%;
-  background-size: cover;
-
-  &:before {
-    content: $UN-space;
-    @include stretch;
-    background-color: #000;
-    opacity: .25;
-  }
-
-  &-name,
-  &-description {
     position: relative;
+    height: 120px;
+    margin-bottom: 52px;
+    background: {
+      position: 50% 50%;
+      repeat: no-repeat;
+      size: cover;
+      color: #f0f0f0;
+    }
+  }
+
+  &-brief {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 0 15px;
   }
 
   &-name {
-    &:before,
-    &:after {
-      font-weight: 300;
-    }
+    margin: 25px 0 0;
+    font-size: 18px !important;
+    color: #333;
+  }
+
+  &-body {
+    padding: 0 15px 15px;
+    line-height: 1.5;
   }
 
   &-description {
-    margin-bottom: 0;
-    clear: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
 
-    span {
-      font-weight: 400;
+.PostList {
+  $gap: 7.5px;
+
+  margin: 0 -$gap;
+
+  &,
+  * {
+    @include box-sizing(border-box);
+  }
+
+  @include clearfix;
+
+  &-item {
+    width: 100%;
+    float: left;
+    padding: $gap;
+
+    &:not(:first-child) {
+      @media (min-width: $screen-sm-min) {
+        width: 50%;
+      }
+
+      @media (min-width: $screen-md-min) {
+        width: percentage(1 / 3);
+      }
+
+      @media (min-width: $screen-lg-min) {
+        width: 25%;
+      }
+    }
+  }
+}
+
+.Post {
+  display: block;
+  font-size: 16px;
+  background: #0871ab none no-repeat 50% 50%;
+  background-size: cover;
+
+  p {
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+
+  .Card-link {
+    background-color: rgba(0, 0, 0, .3);
+
+    &,
+    &:hover {
+      color: #fff !important;
     }
   }
 
-  @media (max-width: $screen-xs-max) {
-    height: 200px;
+  &-title {
+    margin: 0;
+    line-height: 1.5;
+    @include text-ellipsis;
+  }
 
-    &-content {
-      padding-top: 46px;
-      text-align: right;
-    }
+  &-brief {
+    margin: 5px 0 15px !important;
+  }
 
-    &-name {
-      font-size: 36px;
-
-      // &:before {
-      //   content: "我叫";
-      // }
-    }
-
-    &-description {
-      font-size: 14px;
-    }
+  &-meta {
+    font-size: 12px;
   }
 
   @media (min-width: $screen-sm-min) {
-    height: 600px;
-    padding-top: 200px;
+    &--latest {
+      position: relative;
+      display: block;
 
-    &-content {
-      padding-left: 400px;
-    }
-
-    &-name {
-      &:before {
-        content: "Hi, I'm ";
-      }
-
-      &:after {
-        content: ".";
+      .Card-link {
+        position: static;
+        display: block;
+        padding: 80px 48px 48px;
+        font-size: inherit;
+        line-height: inherit;
       }
     }
 
-    &-description {
-      margin-top: 30px;
-
-      span {
-        font-size: 24px;
-      }
+    &--latest &-title {
+      font-size: 48px;
     }
-  }
 
-  @media (min-width: $screen-md-min) {
-    &-content {
-      padding-left: 600px;
+    &--latest &-brief {
+      margin-bottom: 0 !important;
     }
-  }
 
-  @media (min-width: $screen-lg-min) {
-    &-content {
-      padding-left: 700px;
+    &--latest &-meta {
+      position: absolute;
+      top: 48px;
+      left: 48px;
+      font-size: inherit;
+      font-weight: 400;
     }
   }
 }
