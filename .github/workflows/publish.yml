@@ -1,0 +1,46 @@
+name: Publish
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - .knosys/sites/default/**
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      SITE_REPO: ourairyu/.github.git
+      SITE_BRANCH: site
+    steps:
+      - name: Create temp dirs
+        run: mkdir site-src site-dist
+      - uses: actions/checkout@v3
+        with:
+          path: site-src
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ env.SITE_BRANCH }}
+          persist-credentials: false
+          path: site-dist
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 14.15.3
+      - run: cd site-src && npm i && npm run deploy ../site-dist && cd ..
+      - name: Commit changes
+        run: |
+          cd site-dist
+          git config --local user.email "ourairyu@gmail.com"
+          git config --local user.name "Ourai L."
+          git add .
+          git commit -m "chore: update via GitHub Actions"
+      - uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          repository: ${{ env.SITE_REPO }}
+          branch: ${{ env.SITE_BRANCH }}
+          directory: site-dist
