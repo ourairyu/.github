@@ -3,6 +3,7 @@ sh.exe.stackdump
 
 *.log
 
+package-lock.json
 node_modules/
 
 # Hexo sites
