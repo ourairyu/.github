@@ -6,10 +6,9 @@ sh.exe.stackdump
 node_modules/
 
 # Hexo sites
-/.knosys/sites/*/source/_data/knosys/
-/.knosys/sites/*/source/knosys/
-/.knosys/sites/*/source/_posts/*
-!/.knosys/sites/*/source/_posts/hello-world.md
+# /.knosys/sites/*/source/_data/knosys/
+# /.knosys/sites/*/source/knosys/
+# /.knosys/sites/*/source/_posts/*
 # /.knosys/sites/*/themes/*/layout/*
 # !/.knosys/sites/*/themes/*/layout/_local/
 # /.knosys/sites/*/themes/*/scripts/
