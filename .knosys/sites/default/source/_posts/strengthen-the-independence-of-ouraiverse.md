@@ -18,14 +18,14 @@ image: knosys/changes/20250318/banner.jpg
 
 该行动中一个比较重要的部分，就是个人社区公开信息的迁移——
 
-使用和主站「[欧雷流](https://ourai.ws/){:target="_blank"}{:rel="external"}」同样的主题做了[社区专属网站](https://c.ourai.ws/){:target="_blank"}{:rel="external"}，并先把[社区第一次线上分享](https://c.ourai.ws/meetings/m7g5e2o0/){:target="_blank"}{:rel="external"}的内容搬了过来：
+使用和主站「[欧雷流](https://ourai.ws/)」同样的主题做了[社区专属网站](https://c.ourai.ws/)，并先把[社区第一次线上分享](https://c.ourai.ws/meetings/m7g5e2o0/)的内容搬了过来：
 
 <figure>
   <img src="/knosys/changes/20250318/community-homepage.png" alt="社区官网">
   <figcaption>社区官网</figcaption>
 </figure>
 
-同样地，为诞生于社区的数智产品解决方案共建团队「OurAI Labs」也做了个[专属网站](https://labs.ourai.ws/){:target="_blank"}{:rel="external"}：
+同样地，为诞生于社区的数智产品解决方案共建团队「OurAI Labs」也做了个[专属网站](https://labs.ourai.ws/)：
 
 <figure>
   <img src="/knosys/changes/20250318/ourailabs-homepage.png" alt="OurAI Labs 官网">
@@ -34,4 +34,4 @@ image: knosys/changes/20250318/banner.jpg
 
 近期会尽快将所有公开信息迁移完毕，日后就坚定地以独立网站为中心去做品牌建设与营销！
 
-至此，无论是作为个人社区的「[欧雷宇宙](https://c.ourai.ws/){:target="_blank"}{:rel="external"}」，还是作为本人精神世界在数字世界中延伸的「[欧雷宇宙](https://meta.ourai.ws/){:target="_blank"}{:rel="external"}」，都进一步地提高并夯实了独立性！
+至此，无论是作为个人社区的「[欧雷宇宙](https://c.ourai.ws/)」，还是作为本人精神世界在数字世界中延伸的「[欧雷宇宙](https://meta.ourai.ws/)」，都进一步地提高并夯实了独立性！
